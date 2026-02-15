@@ -10,6 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/scripts/enemy_script.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -78,6 +81,7 @@
       <workItem from="1770177895592" duration="93000" />
       <workItem from="1770177996195" duration="836000" />
       <workItem from="1770317972369" duration="1307000" />
+      <workItem from="1770750727769" duration="4858000" />
     </task>
     <servers />
   </component>

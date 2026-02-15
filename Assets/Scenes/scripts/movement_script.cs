@@ -17,7 +17,7 @@ public class movement_script : MonoBehaviour
         transform.position = new Vector3(xStartPos, yStartPos, 0);
     }
 
-    //Sue FixedUpdate for movemnet, updates ata fixed rate, every 16.16 miliseconds
+    //Use FixedUpdate for movement, updates at a fixed rate, every 16.16 miliseconds
     void FixedUpdate()
     {
         
