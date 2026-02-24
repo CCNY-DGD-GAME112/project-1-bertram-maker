@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class movement_script : MonoBehaviour
@@ -6,11 +7,15 @@ public class movement_script : MonoBehaviour
     public float xStartPos;
     public float yStartPos;
     public float speed;
+    //health
+    public float health;
     //positions
     private float xpos;
     private float ypos;
     //prefabs
     public GameObject laser;
+    //laser time
+    public float laser_time;
 
     void Start()
     {
@@ -38,10 +43,23 @@ public class movement_script : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
         }
-
+        //instantiates laser
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(laser, transform.position, Quaternion.identity);
+            Destroy(Instantiate(laser, transform.position, Quaternion.identity), laser_time);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            health--;
+            Debug.Log(health);
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -14,10 +14,5 @@ public class laser_movement : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, 1);
-
-        if (transform.position.y > 7)
-        {
-            Destroy(gameObject);
-        }
     }
 }

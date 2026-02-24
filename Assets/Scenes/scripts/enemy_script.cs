@@ -4,6 +4,8 @@ public class enemy_script : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float speed;
+    public float health;
+    //timer controls how often the enemy shoots
     public float startTimer;
     private float timer;
     //start positions
@@ -14,6 +16,8 @@ public class enemy_script : MonoBehaviour
     public Rigidbody2D rb;
     //prefabs
     public GameObject laser;
+    //laser time
+    public float laser_time;
     void Start()
     {
         timer = startTimer;
@@ -32,7 +36,19 @@ public class enemy_script : MonoBehaviour
         if (timer <= 0)
         {
             timer = startTimer;
-            Instantiate(laser, transform.position, Quaternion.identity);
+            Destroy(Instantiate(laser, transform.position, Quaternion.identity), laser_time);
+        }
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
+            health--;
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
