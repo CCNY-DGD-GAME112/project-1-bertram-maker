@@ -16,4 +16,11 @@ public class enemy_laser_scipt : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, 1);
     }
     
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

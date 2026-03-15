@@ -18,9 +18,15 @@ public class enemy_script : MonoBehaviour
     public GameObject laser;
     //laser time
     public float laser_time;
+    //particles
+    public ParticleSystem particle_explo;
+    //Singleton
+    private enemy_manager_script.EnemyController myEnemy = new enemy_manager_script.EnemyController();
+
     void Start()
     {
         timer = startTimer;
+        myEnemy.Start();
     }
 
     // Update is called once per frame
@@ -42,11 +48,13 @@ public class enemy_script : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == "Player_projectile")
         {
             health--;
+            Destroy(Instantiate(particle_explo.gameObject, transform.position, Quaternion.identity), particle_explo.startLifetime);
             if (health <= 0)
             {
+                myEnemy.OnDestroy();
                 Destroy(gameObject);
             }
         }

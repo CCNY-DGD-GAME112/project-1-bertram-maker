@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class movement_script : MonoBehaviour
@@ -16,6 +17,8 @@ public class movement_script : MonoBehaviour
     public GameObject laser;
     //laser time
     public float laser_time;
+    //particles
+    //public ParticleSystem particle_explo;
 
     void Start()
     {
@@ -34,12 +37,12 @@ public class movement_script : MonoBehaviour
     void Update()
     {
         //controls movement
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > -8)
         {
             transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
         }
         
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < 8)
         {
             transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
         }
@@ -52,10 +55,9 @@ public class movement_script : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Enemy_projectile")
         {
             health--;
-            Debug.Log(health);
             if (health <= 0)
             {
                 Destroy(gameObject);
