@@ -4,21 +4,10 @@
     <list default="true" id="e198ac0e-f4a0-40de-b8be-6ade42aa33f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project-1-bertram-maker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project-1-bertram-maker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/enemy_laser.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/enemy_laser.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/player_laser.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/player_laser.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/enemy_laser_scipt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/scripts/enemy_laser_scipt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/enemy_script.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/scripts/enemy_script.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/laser_movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/scripts/laser_movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/enemy_manager_script.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/scripts/enemy_manager_script.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/movement_script.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/scripts/movement_script.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/timer_script.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scripts/timer_script.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +115,9 @@
       <workItem from="1773520334232" duration="172000" />
       <workItem from="1773520607113" duration="925000" />
       <workItem from="1773540880565" duration="1420000" />
-      <workItem from="1773617806617" duration="899000" />
+      <workItem from="1773617806617" duration="1958000" />
+      <workItem from="1773698087785" duration="649000" />
+      <workItem from="1773699153578" duration="3127000" />
     </task>
     <servers />
   </component>

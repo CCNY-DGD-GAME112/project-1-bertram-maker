@@ -1,6 +1,8 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class movement_script : MonoBehaviour
 {
@@ -61,7 +63,14 @@ public class movement_script : MonoBehaviour
             if (health <= 0)
             {
                 Destroy(gameObject);
+                StartCoroutine("gameover");
             }
         }
+    }
+
+    IEnumerator gameover()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("GameOver");
     }
 }

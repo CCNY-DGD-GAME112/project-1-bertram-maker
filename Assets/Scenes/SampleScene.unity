@@ -1021,6 +1021,7 @@ MonoBehaviour:
   enemy1: {fileID: 1636311751860850685, guid: d292d330ec2bbe3488abb519be21cd6f, type: 3}
   startTimer: 1
   scoreDisplay: {fileID: 864779861}
+  movement_script: {fileID: 808518855}
 --- !u!4 &2100884389
 Transform:
   m_ObjectHideFlags: 0
